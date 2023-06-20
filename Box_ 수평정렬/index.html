@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수평정렬</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>박스 나란히 배치하기</h1>
+    <div class="left">
+      <div>
+        <h2>1. 왼쪽 정렬</h2>
+        <h3>1.1 float 이용</h3>
+        <p>
+          Block Box들 한테 float : left를 주되,
+          float 속성을 적용한 부모 다음 요소에게 
+          clear로 플로팅 된 요소들의 효과를 지워줘야 한다.
+        </p>
+        <div class="left-float box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="clear">
+        <h3>1.2 inline-block 이용</h3>
+        <p>
+          박스 display를 inline-block으로 설정하고,
+          가로 X 세로 값을 주면 inline처럼 나란히 배치된다.
+        </p>
+        <div class="left-inline box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div>
+        <h3>1.3 flex를 이용해서 수평정렬</h3>
+        <p>
+          내가 수평정렬 하고싶은 아이템들의
+          부모 요소에게 display : flex 속성을 준다.
+        </p>
+        <div class="left-flex box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h2>2. 오른쪽 정렬</h2>
+      <div>
+        <h3>2.1 float 이용</h3>
+        <p>
+          <strong>박스한테 다짜고짜 float : right 속성을 적용하면 박스 순서가 뒤집힌다.</strong>
+            정렬한 박스들에게게는 float : left를 주고,
+            그 박스를 감싸고 있는 부모 태그에게 float : right
+            속성을 준다. 플로팅 된 요소 뒤에 clear로 플로딩된 요소들의 효과를 지워줘야한다.
+        </p>
+        <div class="right-float">
+          <div class="box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+      </div>
+      <div class="clear">
+        <h3>2.2 inline-block 이용</h3>
+        <p>
+          박스들을 inline-block으로 나란히 배치시킨 후, 그부모한테 text-align : right 속성을준다
+        </p>
+        <div class="right-inline box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div>
+        <h3>2.3 flex 이용</h3>
+        <p>
+          나란히 배치하고 싶은 아이템들의 부모 요소에게 display : flex 속성을준다.
+        </p>
+        <div class="right-flex box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+    < class="center">
+      <div>
+        <h2>3. 가운데 정렬</h2>
+        <h3>3.1 float으로 가운데 정렬</h3>
+        <p>박스들을 float : left로 나란히 배치한 후에 그 박스들의 부모에게 자식들의 가로길이 다 더해서 width값으로 주고, margin : 0 auto;를 준다.</p>
+        <div class="center_float box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="clear">
+        <h3>3.2 inline-block 속성 가운데 정렬</h3>
+        <p>
+          박스들을 inline-block으로 나란히 배치한 후 그 부모에게 text-align : center;를 준다.</p>
+        <div class="center-inline box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    <div>
+      <h3>3.3 flex로 가운데 정렬</h3>
+      <p>나란히 배치하고 싶은 아이템들의 부모 요소한테 display : flex; 속성을 준다. justify-content : center;</p>
+      <div class="center-flex box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+    <div>
+      <h1>Flex</h1>
+      <div class="flex box">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
