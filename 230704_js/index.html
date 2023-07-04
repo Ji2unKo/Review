@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- jQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <p class="hello">안녕</p>
+    <p class="hello">안녕</p>
+    <p class="hello">안녕</p>
+  </div>
+  <script>
+    // javascript / jQuery HTML안 글자 '안녕' -> 'hello'
+
+    //javascript
+    var elements = document.querySelectorAll(".hello")
+    for ( var i=elements.length; i--;){
+      elements[i].textContent="hello"
+    }
+
+    //jQuery
+    // $(document).ready(function(){
+    //   $('.hello').html('hello')
+    // })
+  </script>
+</body>
+</html>
