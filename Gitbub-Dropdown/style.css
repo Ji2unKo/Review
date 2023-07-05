@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #333;
+}
+
+.profile-button{
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  width: 50px;
+  height: 32px;
+  background-color: transparent;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.profile-button img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.profile-button:hover {
+  opacity: 0.75;
+}
+
+.drawer-menu{
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  width: 180px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.dropdown-menu:before {
+	width: 16px;
+	height: 16px;
+	box-sizing: border-box;
+	border-top: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	border-right: 8px solid transparent;
+}
+
+.drawer-menu-list {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
