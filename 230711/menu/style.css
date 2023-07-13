@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.gnb {
+  width: 100%;
+  display: flex;
+}
+
+.gnb > li {
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+.gnb > li > a {
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 700;
+  background-color: dodgerblue;
+  transition: background-color 300ms ease-in-out;
+}
+
+.gnb > li > a:hover,
+.gnb > li > a.on {
+  background-color: red;
+}
+
+.sub {
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 500ms ease-in-out;
+}
+
+.sub.active {
+  max-height: 270px;
+}
+
+.sub li a {
+  display: block;
+  padding: 16px 0;
+  background-color: #eeeded;
+  transition: background-color 300ms ease-in-out;
+}
+
+.sub li a:hover {
+  background-color: #ccc;
+}
+

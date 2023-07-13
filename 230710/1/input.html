@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 삽입하기</title>
+</head>
+<body>
+  <from class="action">
+    <input type="hidden" name="url" id="url" value="사이트를 통한 직접 로그인">
+    <label for="user-id">아이디 : <input type = "text" id="user-id"></label>
+    <label>비밀번호 : <input type="password"></label>
+    <input type="submit" value="로그인">
+    <ul id="shipping">
+      <li>
+        <label for="prod">주문상품</label>
+        <input type="text" id="prod" value="상품용 3KG">
+      </li>
+      <li>
+        <label for="mail">이메일</label>
+        <input type="text" id="mail">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <input type="number">개
+      </li>
+      <li>
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <input type="number">개
+      </li>
+      <li>
+        <label><input type="checkbox" value="f_3">가정용 3kg</label>
+        <input type="number">개
+      </li>
+      <li>
+        <label><input type="checkbox" value="f_5">가정용 5kg</label>
+        <input type="number">개
+      </li>
+    </ul> 
+    <ul>
+      <li><label><input type="radio" name="gift" value="yes" >선물 포장</label></li>
+      <li><label><input type="radio" name="gift" value="no">선물 포장 안 함</label></li>
+    </ul> 
+          <ul>
+        <li>
+          <label><input type="checkbox" value="s_3">선물용 3kg</label>
+          <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="s_5">선물용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>
+      <li>
+        <label for="d-day">배송 지정 (주문일로부터 최소 3일 이후)</label>
+        <input type="date" id="d-day">
+      </li>
+  </from>
+</body>
+</html>

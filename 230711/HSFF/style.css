@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+
+.navbar-logo a img{
+  font-size: 24px;
+  border: 1px solid red;
+}
+
+.navbar-menu ui {
+  display: flex;
+  justify-content: space-between;
+}
