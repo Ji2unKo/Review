@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #272926;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.new-login {
+  background-color: #eee;
+  padding: 20px;
+  position: fixed;
+  display: none;
+  animation: zoom 0.6s ease-in-out forwards;
+  position: fixed;
+  border-radius: 6px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close {
+  font-size: 50px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-20px);
+  margin: 10px;
+}
+
+.close:hover {
+  opacity: 0.7;
+}
+
+.image {
+  border-radius: 100px;
+  width: 130px;
+  height: 130px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.checkbox-login {
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+i {
+  position: absolute;
+  right: 0;
+  transform: translateY(-45px) translateX(-30px);
+  cursor: pointer;
+}
+
+.fa-eye-slash {
+  display: none;
+}
